@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>student result calculator
+
+    </title>
+</head>
+<body>
+    <main>
+
+    <h1>Student Result Calculator</h1>
+
+    <p>Click start to calculate the result !</p>
+
+    <button>Start</button>
+    
+
+    </main>
+
+    <script>
+     
+     let studentName = prompt("enter student name:");
+
+     let m1 =Number(prompt("enter physics mark:"));
+
+     let m2 = Number(prompt("enter chemistry mark:"));
+
+     let m3 = Number(prompt("enter the maths mark:"));
+
+       if ( m1<0 || m1>100 ||
+            m2<0 || m2>100 ||
+            m3<0 || m3>100 )
+                
+        {
+            alert("invalid marks!");
+
+        }
+        else {
+            alert("All marks are valid!!!");
+              }
+
+              let total = m1 + m2 + m3;
+              let avg = total / 3;
+
+            alert("Total:" =+total+"\nAverage:"+avg);
+
+
+        let grade ;
+
+
+        if (avg>=90)
+         {grade:"A";}
+
+         else if (avg>=75)
+         {grade:"B";}
+
+         else if (avg>=50)
+         {grade:"C";}
+
+         else(avg<50)
+         {grade:"D";}
+
+       alert(
+        "Student nmae:" +studentName+
+        "\nTotal mark:" +total+
+        "\nAverage:"  +avg+
+        "\nGrade:"  +grade
+       );
+
+
+
+
+
+   
+
+    
+    </script>
+    
+</body>
+</html>
